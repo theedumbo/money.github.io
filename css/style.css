@@ -1,0 +1,249 @@
+ 
+ 
+/*
+ * Basic CSS starts 
+ */
+
+body{
+	font-family: 'Open Sans', Sans Serif;
+	font-weight: 400;
+	color: #545454;
+	-webkit-font-smoothing: antialiased;
+}
+
+h1,h2,h3,h4,h5,h6{
+	font-family: 'Open Sans', Sans Serif;
+	font-weight: 600;
+}
+
+p{
+	margin:0;
+	padding:0;
+}
+
+a{
+	text-decoration: none;
+	color: #fb6c6c;
+}
+
+a:hover{
+	text-decoration: none;
+	color: #e32b2b;
+}
+
+a:hover,a:active,a:focus {
+	outline: 0;
+}
+
+hr{
+
+}
+
+:focus {
+	outline:none;
+}
+
+::-moz-focus-inner {
+	border:0;
+}
+
+/* 
+ * Basic CSS ends 
+ */
+
+header .navbar { 
+	margin: 0;
+	border-radius: 0;
+	border-bottom: 1px solid #black; 
+	box-shadow: 0 1px 15px rgba(0,0,0,0.2);
+	padding:2px;
+}
+header .navbar-nav>li>a {
+	margin: 15px 3px;
+	padding-top: 6px;
+	padding-bottom: 6px;
+	border: 1px solid transparent;
+	border-radius: 3px;
+}
+
+header .navbar-default .navbar-nav>li>a:hover, 
+header .navbar-default .navbar-nav>li>a:focus,
+header .navbar-default .navbar-nav>li.open>a:hover, 
+header .navbar-default .navbar-nav>li.open>a:focus {
+	background: green;
+}
+
+header .navbar-nav .dropdown-menu {
+	top: 57px;
+	border-radius: 3px;
+	border-color: #fb6c6c;
+}
+header .navbar-nav .dropdown-menu:after, 
+header .navbar-nav .dropdown-menu:before {
+	bottom: 100%;
+	right: 30px;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+}
+
+header .navbar-nav .dropdown-menu:after {
+	border-color: rgba(240, 253, 255, 0);
+	border-bottom-color: #fff;
+	border-width: 7px;
+}
+
+header .navbar-nav .dropdown-menu:before {
+	border-color: rgba(194, 225, 245, 0);
+	border-bottom-color: #fb6c6c;
+	border-width: 8px;
+	margin-right: -1px;
+}
+header .navbar-brand {
+	padding: 0;
+	height: auto;
+}
+header .navbar-brand img {
+	position: relative;
+	top: 7px;
+	max-width: 165px;
+}
+
+/*
+ * works
+ */
+ 
+.works {
+	padding-top: 10px;
+	padding-bottom: 30px;
+	
+	
+	
+}
+
+.works .work-item {
+	max-width: 360px;
+	margin: 0 auto;
+	margin-top: 10px;
+	text-align: center;
+	border:3px solid green;
+	
+	
+}
+.works .work-item h3 {
+	font-size: 12px;
+	color: green;
+	
+}
+
+.works .work-item .org {
+	display: block;
+	font-size: 15px;
+	color:black;
+	
+}
+
+
+
+/*
+ * Contact
+ */
+ 
+.contact {
+	padding-top: 120px;
+	padding-bottom: 120px;
+	text-align:center;
+}
+
+.contact h3 {
+	margin-top: 0px;
+	font-size: 20px;
+}
+.contact p {
+	padding: 0 15px;
+	font-size: 14px;
+	line-height: 23px;
+}
+
+footer {
+	padding: 10px 0;
+	background: whitesmoke;
+	text-align: center;
+}
+
+footer p {
+	font-size: 13px;
+	line-height: 25px;
+	color: black;
+}
+footer p a { 
+	font-size: 14px;
+	line-height: 26px;
+	text-transform: uppercase;
+	letter-spacing: 0.055em;
+	color: black;
+}
+footer p a:hover { color: green; }
+footer img {
+	max-width: 150px !important;
+	margin: 15px auto;
+	border-radius: 4px;
+}
+
+
+}
+
+footer .copy-right {
+	margin-top: 10px;
+}
+
+/*
+ * Responsive CSS 
+ */
+
+/*
+ * Mobile phones 
+ */
+@media (max-width: 480px){
+		header .navbar-nav .dropdown-menu:after, 
+	header .navbar-nav .dropdown-menu:before { display: none;}
+	.contact .contact-container {
+		max-width: 360px;
+		margin: 0 auto;
+		
+	}
+	.contact .contact-container form{	margin-bottom: 30px;}
+	.contact .contact-container .map { margin-top: 30px; }
+	
+	.works .work-item {
+	max-width: 255px;
+	margin: 0 auto;
+	margin-top: 10px;
+	text-align: center;
+	border:1px solid green;
+	
+}
+
+/*
+ * Tablets 
+ */
+@media (max-width: 767px){
+	header .navbar-nav .dropdown-menu:after, 
+	header .navbar-nav .dropdown-menu:before { display: none;}
+	.contact .contact-container {
+		max-width: 360px;
+		margin: 0 auto;
+	}
+	.contact .contact-container form{	margin-bottom: 30px;}
+	.contact .contact-container .map { margin-top: 30px; }
+}
+
+/*
+ * Desktop 
+ */
+@media (max-width: 991px){
+
+}
